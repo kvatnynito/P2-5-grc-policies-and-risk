@@ -1,155 +1,220 @@
-## GRC Policies & Risk
+# P2-5: GRC Policies & Risk
 
-This project demonstrates core Governance, Risk, and Compliance (GRC) skills used across cybersecurity programs.
-It includes security policies, risk matrices, governance documentation, and framework mapping to standards such as NIST CSF, NIST 800-53, ISO27001, and PCI-DSS.
+## Overview
 
-## 🎯 Objectives
+This repo is planned to document Governance, Risk, and Compliance (GRC) work that supports broader cybersecurity programs.
 
-- Create enterprise-grade security policies
-- Perform qualitative & semi-quantitative risk analysis
-- Build a standardized risk matrix
-- Document governance requirements
-- Map controls to industry frameworks
+It is intended to focus on security policies, risk matrices, governance documentation, and framework mapping aligned to standards such as NIST CSF, NIST 800-53, ISO 27001, and PCI-DSS.
 
-## 📁 What’s Inside
-docs/       - Policies, risk matrix, templates, framework mappings
-lab/        - Optional evidence: screenshots, findings, posture data
-scripts/    - Optional automation (policy checks, CSV handling)
-.github/    - Issue/PR templates
+This project is part of Portfolio 2 and is planned as a follow-on phase after completion of Portfolio 1, which provides the technical lab foundation that can later supply evidence, findings, and scenarios for GRC documentation and risk analysis.
 
-## 📜 Security Policies Included
+---
 
-This repo includes (or will include) several foundational security policies:
+## Status
 
-- Acceptable Use Policy (AUP)
+**Current state:** Planned  
+**Execution state:** Not yet started  
+**Prerequisite:** Portfolio 1 completion
+
+This repo is being prepared in advance so that the project scope, document structure, policy set, and risk-management workflow are already defined before hands-on work begins.
+
+---
+
+## Planned Objectives
+
+This project is intended to build practical GRC skills, including:
+
+- creating enterprise-style security policies
+- performing qualitative and semi-quantitative risk analysis
+- building a standardized risk matrix
+- documenting governance requirements
+- mapping controls to recognized industry frameworks
+- translating technical findings into business risk language
+
+---
+
+## Planned Repository Structure
+
+- `docs/` — policies, risk matrices, templates, framework mappings, and governance documentation
+- `lab/` — optional supporting evidence such as screenshots, findings, posture data, or validation notes
+- `scripts/` — optional automation for CSV handling, policy tracking, or lightweight analysis support
+- `.github/` — issue or pull request templates (optional)
+
+---
+
+## Planned Security Policies
+
+This repo is expected to include foundational policy documents such as:
+
+- Acceptable Use Policy
 - Access Control Policy
 - Incident Response Policy
 - Change Management Policy
 - Vulnerability Management Policy
-- Logging & Monitoring Policy
-- Backup & Recovery Policy
+- Logging and Monitoring Policy
+- Backup and Recovery Policy
 
+Additional policies may be added later as the portfolio expands.
 
-Each policy follows a professional structure:
-- Purpose
-- Scope
-- Roles & responsibilities
-- Requirements
-- Enforcement
-- Definitions (optional)
-- Versioning
+Each policy is planned to follow a consistent structure, such as:
 
-## 📊 Risk Management
+- purpose
+- scope
+- roles and responsibilities
+- requirements
+- enforcement
+- definitions where needed
+- versioning or revision history
 
-This repo includes:
+---
 
+## Planned Risk Management Content
 
-- Risk Matrix (Likelihood × Impact)
-- Heat map representation
-- Risk scoring methodology
-- Controls mapped to risks
-- Recommendations section
+This repo is expected to include:
 
-You populate the Risk_Matrix_TEMPLATE.csv with actual risks from:
+- a risk matrix using likelihood and impact
+- a simple heat map representation
+- a risk scoring approach
+- controls mapped to identified risks
+- recommendations or treatment options
 
-- network scans
-- cloud configurations
-- identity misconfigurations
-- policy gaps
-- general security scenarios
+Planned risk entries may be based on scenarios such as:
 
-This gives you real GRC practice.
+- network scan findings
+- cloud configuration issues
+- identity and access misconfigurations
+- policy or control gaps
+- general security scenarios relevant to small enterprise environments
 
-## 🧪 Lab Setup (Optional)
-Most GRC work is documentation-based, but this repo may reference:
+The goal is to practice documenting risk in a way that connects technical issues to governance and decision-making.
+
+---
+
+## Planned Use of Supporting Evidence
+
+Most GRC work in this repo is planned to be documentation-driven.
+
+However, the repo may also reference supporting evidence such as:
 
 - screenshots from Azure Secure Score
-- evidence from vulnerability scans
-- OS hardening gaps
+- findings from vulnerability scans
+- endpoint hardening gaps
 - audit logs showing misconfigurations
+- screenshots or exports from related projects
 
-You can include these in /lab/ to support risk scoring or control justification.
+These can be placed in `lab/` when useful to support risk scoring, control mapping, or policy justification.
 
-## ▶️ How to Use This Repo
-**1. Fill out the Risk Matrix**
+---
 
-Use realistic organizational risks such as:
-- Weak password policies
-- Open RDP to the internet
-- Missing MFA
-- Vulnerable software
-- No logging or monitoring
-- Lack of backups
+## Planned Workflow
 
-Score each one on:
+Once execution begins, the intended workflow for this repo is:
 
-- Likelihood
-- Impact
-- Risk rating
-- Assigned controls
+### 1. Define or refine the policy set
+Planned activities may include:
 
-**2. Write or refine security policies**
+- selecting the initial policies to draft
+- using a consistent policy template
+- aligning language across all documents
+- documenting ownership, scope, and enforcement expectations
 
-Each policy should include:
-- Purpose
-- Scope
-- Responsibilities
-- Requirements
-- Enforcement
-- Version control
+### 2. Build the risk matrix
+Planned activities may include entering realistic risks such as:
 
-Use the templates inside docs/.
+- weak password policies
+- open RDP exposure
+- missing MFA
+- vulnerable software
+- lack of logging or monitoring
+- lack of backups
+- excessive privileges or poor access control
 
-**3. Map policies to frameworks**
+Each entry may include:
 
-Optional but extremely impressive to recruiters:
+- likelihood
+- impact
+- overall risk rating
+- mapped controls
+- recommended treatment or mitigation
+
+### 3. Map policies and risks to frameworks
+Planned framework mapping may include:
 
 - NIST CSF
 - NIST 800-53
-- ISO27001 Annex A
+- ISO 27001 Annex A
 - PCI-DSS
 - CIS Controls
 
-## 📊 Deliverables
-✅ Security policies
+The goal is to show how governance documents and risk treatment relate to common industry standards.
 
-✅ Completed risk matrix
+### 4. Support the documentation with evidence where useful
+Planned activities may include:
 
-✅ Control mapping
+- referencing findings from related portfolio projects
+- linking technical observations to risk entries
+- storing optional screenshots or exported evidence in `lab/`
 
-✅ Governance documentation
+---
 
-✅ Optional audit evidence
+## Planned Deliverables
 
-✅ Optional diagrams
+This repo is expected to eventually include:
 
-## 🧠 What I Learned
-- How risk is calculated using qualitative & semi-quantitative scoring
-- How policies support technical and administrative controls
-- The structure of real-world security documentation
-- Why governance is foundational to cybersecurity maturity
-- How compliance frameworks overlap and differ
-- How to translate technical vulnerabilities into business risk
+- security policy documents
+- a completed risk matrix
+- control mapping to industry frameworks
+- governance documentation
+- optional audit or lab evidence
+- optional diagrams or supporting visuals
 
-## ✅ Next Steps
+---
 
-- Add Data Classification & Handling Policy
-- Add Mobile Device / BYOD Security Policy
-- Build a formal Risk Register
-- Link Repo 2 findings (OpenVAS) to this risk matrix
-- Create a NIST CSF compliance checklist
-- Include “audit evidence” examples in /lab
-- Add a Policy Exception Request form (highly realistic for enterprise GRC)
+## Planned Skill Areas
 
-## Related Projects 
+This project is intended to help build experience in:
 
-🔎 Repo 2 – Vulnerability Management
-Pull real findings into your GRC risk matrix.
-https://github.com/kvntynito/2-vuln-mgmt-openvas-lab
+- security policy writing
+- governance documentation
+- qualitative and semi-quantitative risk scoring
+- framework mapping
+- control thinking
+- translating technical issues into business risk
+- understanding how governance supports cybersecurity maturity
 
-🔐 Repo 3 – Endpoint Hardening
-Use hardening gaps as evidence in risk scoring.
-https://github.com/kvntynito/3-endpoint-hardening-windows-linux
+---
 
-## ⚖️ License
-MIT – see `LICENSE`.
+## Planned Next Steps
+
+When work begins on this repo, the initial implementation focus will likely be:
+
+- draft the first core policy documents
+- build the initial risk matrix template
+- define a simple scoring methodology
+- map selected risks to appropriate controls
+- connect selected technical findings from other portfolio projects to governance documentation
+
+Future expansion may include:
+
+- a Data Classification and Handling Policy
+- a Mobile Device or BYOD Security Policy
+- a formal risk register
+- a NIST CSF checklist
+- audit-evidence examples in `lab/`
+- a policy exception request form for realism and workflow completeness
+
+---
+
+## Planned Related Projects
+
+### Repo 2 — Vulnerability Management
+This repo may later pull findings from vulnerability assessments into the risk matrix and treatment documentation.
+
+### Repo 3 — Endpoint Hardening
+This repo may later use hardening gaps or validation findings as supporting evidence for risk scoring or control justification.
+
+---
+
+## License
+
+MIT — see `LICENSE`.
