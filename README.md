@@ -1,220 +1,318 @@
-# P2-5: GRC Policies & Risk
+# P2-5: AWS EC2 Hardening & Vulnerability Management
 
 ## Overview
 
-This repo is planned to document Governance, Risk, and Compliance (GRC) work that supports broader cybersecurity programs.
+This repository is part of **Cybersecurity Portfolio 2: AWS Cloud Security & Engineering**.
 
-It is intended to focus on security policies, risk matrices, governance documentation, and framework mapping aligned to standards such as NIST CSF, NIST 800-53, ISO 27001, and PCI-DSS.
+The purpose of this project is to design and document hardening and vulnerability management practices for an AWS EC2 workload. This lab will focus on secure EC2 deployment, SSH access control, patching, security group exposure review, basic vulnerability assessment, and AWS Systems Manager concepts.
 
-This project is part of Portfolio 2 and is planned as a follow-on phase after completion of Portfolio 1, which provides the technical lab foundation that can later supply evidence, findings, and scenarios for GRC documentation and risk analysis.
+This project is planned as the fifth AWS-focused lab in Portfolio 2 because workload hardening should build on the AWS account, network, logging, and storage security foundations from the earlier projects.
 
 ---
 
 ## Status
 
-**Current state:** Planned  
-**Execution state:** Not yet started  
-**Prerequisite:** Portfolio 1 completion
+**Planned**
 
-This repo is being prepared in advance so that the project scope, document structure, policy set, and risk-management workflow are already defined before hands-on work begins.
+This project has not been implemented yet.
 
----
+Work on this repository will begin after the required Portfolio 1 homelab foundation is completed and after the initial AWS account, VPC, logging, and S3 security foundations are prepared.
 
-## Planned Objectives
+Current status:
 
-This project is intended to build practical GRC skills, including:
-
-- creating enterprise-style security policies
-- performing qualitative and semi-quantitative risk analysis
-- building a standardized risk matrix
-- documenting governance requirements
-- mapping controls to recognized industry frameworks
-- translating technical findings into business risk language
-
----
-
-## Planned Repository Structure
-
-- `docs/` — policies, risk matrices, templates, framework mappings, and governance documentation
-- `lab/` — optional supporting evidence such as screenshots, findings, posture data, or validation notes
-- `scripts/` — optional automation for CSV handling, policy tracking, or lightweight analysis support
-- `.github/` — issue or pull request templates (optional)
+- [ ] EC2 hardening plan created
+- [ ] SSH access control plan documented
+- [ ] Patch management plan created
+- [ ] Security group exposure review planned
+- [ ] Vulnerability assessment plan created
+- [ ] Systems Manager review planned
+- [ ] Cost-control notes created
+- [ ] Screenshots and evidence collected
+- [ ] Final documentation completed
 
 ---
 
-## Planned Security Policies
+## Portfolio Context
 
-This repo is expected to include foundational policy documents such as:
+### Portfolio 1 Foundation
 
-- Acceptable Use Policy
-- Access Control Policy
-- Incident Response Policy
-- Change Management Policy
-- Vulnerability Management Policy
-- Logging and Monitoring Policy
-- Backup and Recovery Policy
+Portfolio 1 focuses on building a local cybersecurity homelab using Proxmox, pfSense, network segmentation, Active Directory, Splunk, and vulnerable systems.
 
-Additional policies may be added later as the portfolio expands.
+Portfolio 1 builds the local infrastructure, endpoint, and vulnerability management foundation.
 
-Each policy is planned to follow a consistent structure, such as:
+### Portfolio 2 Direction
 
-- purpose
-- scope
-- roles and responsibilities
-- requirements
-- enforcement
-- definitions where needed
-- versioning or revision history
+Portfolio 2 expands local infrastructure and security concepts into AWS cloud security and cloud engineering.
+
+This repository focuses on securing and assessing an AWS EC2 workload.
 
 ---
 
-## Planned Risk Management Content
+## Project Goal
 
-This repo is expected to include:
+The goal of this project is to understand how EC2 workloads can be deployed, hardened, monitored, patched, and reviewed for exposure risk.
 
-- a risk matrix using likelihood and impact
-- a simple heat map representation
-- a risk scoring approach
-- controls mapped to identified risks
-- recommendations or treatment options
+By the end of this project, the planned AWS environment should include documentation for:
 
-Planned risk entries may be based on scenarios such as:
-
-- network scan findings
-- cloud configuration issues
-- identity and access misconfigurations
-- policy or control gaps
-- general security scenarios relevant to small enterprise environments
-
-The goal is to practice documenting risk in a way that connects technical issues to governance and decision-making.
+- EC2 workload security baseline
+- SSH access control
+- Security group exposure review
+- Patch management approach
+- Basic vulnerability assessment
+- AWS Systems Manager review
+- Cost-control considerations
+- Redacted evidence and screenshots
 
 ---
 
-## Planned Use of Supporting Evidence
+## Planned Skills
 
-Most GRC work in this repo is planned to be documentation-driven.
+This project is intended to develop hands-on familiarity with:
 
-However, the repo may also reference supporting evidence such as:
-
-- screenshots from Azure Secure Score
-- findings from vulnerability scans
-- endpoint hardening gaps
-- audit logs showing misconfigurations
-- screenshots or exports from related projects
-
-These can be placed in `lab/` when useful to support risk scoring, control mapping, or policy justification.
+- EC2 workload security
+- Linux server hardening basics
+- SSH hardening
+- Security group review
+- Cloud workload exposure management
+- Patch management
+- Vulnerability management workflow
+- AWS Systems Manager concepts
+- Amazon Inspector concepts
+- Security documentation
+- Cost-conscious cloud operations
 
 ---
 
-## Planned Workflow
+## Planned AWS Services
 
-Once execution begins, the intended workflow for this repo is:
+The following AWS services and features may be used in this project:
 
-### 1. Define or refine the policy set
-Planned activities may include:
+| AWS Service / Feature | Planned Use |
+|---|---|
+| Amazon EC2 | Deploy and harden a test Linux instance |
+| Amazon VPC | Place EC2 into a controlled network |
+| Security Groups | Restrict inbound and outbound access |
+| IAM Roles | Attach controlled permissions to EC2 if needed |
+| AWS Systems Manager | Review patching and management concepts |
+| Amazon Inspector | Optional vulnerability assessment review if cost-controlled |
+| CloudTrail | Review EC2-related management events |
+| CloudWatch | Optional monitoring review |
+| AWS CLI | Optional validation and testing |
 
-- selecting the initial policies to draft
-- using a consistent policy template
-- aligning language across all documents
-- documenting ownership, scope, and enforcement expectations
+---
 
-### 2. Build the risk matrix
-Planned activities may include entering realistic risks such as:
+## Planned Lab Sections
 
-- weak password policies
-- open RDP exposure
-- missing MFA
-- vulnerable software
-- lack of logging or monitoring
-- lack of backups
-- excessive privileges or poor access control
+### 1. EC2 Hardening Baseline
 
-Each entry may include:
+Planned tasks:
 
-- likelihood
-- impact
-- overall risk rating
-- mapped controls
-- recommended treatment or mitigation
+- Deploy or document a Free Tier eligible EC2 Linux instance
+- Review AMI selection
+- Review instance type
+- Review storage settings
+- Confirm no unnecessary public exposure
+- Document initial hardening checklist
 
-### 3. Map policies and risks to frameworks
-Planned framework mapping may include:
+Expected outcome:
 
-- NIST CSF
-- NIST 800-53
-- ISO 27001 Annex A
-- PCI-DSS
-- CIS Controls
+> EC2 workload security is reviewed before the instance is used for testing.
 
-The goal is to show how governance documents and risk treatment relate to common industry standards.
+---
 
-### 4. Support the documentation with evidence where useful
-Planned activities may include:
+### 2. SSH Access Control
 
-- referencing findings from related portfolio projects
-- linking technical observations to risk entries
-- storing optional screenshots or exported evidence in `lab/`
+Planned tasks:
+
+- Restrict SSH access to a trusted source IP where possible
+- Avoid broad SSH exposure to `0.0.0.0/0`
+- Review key pair handling
+- Document secure administrative access
+- Review alternatives such as Systems Manager Session Manager
+
+Expected outcome:
+
+> Administrative access is controlled and documented with risk reasoning.
+
+---
+
+### 3. Patch Management
+
+Planned tasks:
+
+- Review operating system update process
+- Document package update commands
+- Review AWS Systems Manager patching concepts
+- Document before/after patch status
+- Connect patching to vulnerability management
+
+Expected outcome:
+
+> The EC2 workload has a documented patch management plan.
+
+---
+
+### 4. Security Group Exposure Review
+
+Planned tasks:
+
+- Review inbound security group rules
+- Review outbound security group rules
+- Identify risky rules
+- Document rule purpose
+- Remove or avoid unnecessary exposure
+
+Expected outcome:
+
+> Network exposure is documented and limited to required access.
+
+---
+
+### 5. Vulnerability Assessment
+
+Planned tasks:
+
+- Review vulnerability assessment options
+- Review Amazon Inspector conceptually or use only if cost-controlled
+- Optionally compare with local vulnerability management concepts from Portfolio 1
+- Document findings and remediation approach
+- Avoid unnecessary scanning against public targets
+
+Expected outcome:
+
+> Vulnerability management workflow is documented for an AWS-hosted workload.
+
+---
+
+### 6. Systems Manager Review
+
+Planned tasks:
+
+- Review AWS Systems Manager capabilities
+- Document Session Manager concept
+- Review patch management features
+- Review required IAM role concepts
+- Decide whether Systems Manager will be implemented in this lab or reviewed conceptually
+
+Expected outcome:
+
+> AWS Systems Manager is understood as a management and operational security tool for EC2 workloads.
 
 ---
 
 ## Planned Deliverables
 
-This repo is expected to eventually include:
+This repository is expected to include:
 
-- security policy documents
-- a completed risk matrix
-- control mapping to industry frameworks
-- governance documentation
-- optional audit or lab evidence
-- optional diagrams or supporting visuals
-
----
-
-## Planned Skill Areas
-
-This project is intended to help build experience in:
-
-- security policy writing
-- governance documentation
-- qualitative and semi-quantitative risk scoring
-- framework mapping
-- control thinking
-- translating technical issues into business risk
-- understanding how governance supports cybersecurity maturity
+- EC2 hardening plan
+- SSH access control documentation
+- Patch management plan
+- Security group exposure review
+- Vulnerability assessment plan
+- Systems Manager review
+- Cost-control notes
+- Redacted screenshots
+- Lessons learned
+- Final project summary
 
 ---
 
-## Planned Next Steps
+## Proposed Repository Structure
 
-When work begins on this repo, the initial implementation focus will likely be:
-
-- draft the first core policy documents
-- build the initial risk matrix template
-- define a simple scoring methodology
-- map selected risks to appropriate controls
-- connect selected technical findings from other portfolio projects to governance documentation
-
-Future expansion may include:
-
-- a Data Classification and Handling Policy
-- a Mobile Device or BYOD Security Policy
-- a formal risk register
-- a NIST CSF checklist
-- audit-evidence examples in `lab/`
-- a policy exception request form for realism and workflow completeness
-
----
-
-## Planned Related Projects
-
-### Repo 2 — Vulnerability Management
-This repo may later pull findings from vulnerability assessments into the risk matrix and treatment documentation.
-
-### Repo 3 — Endpoint Hardening
-This repo may later use hardening gaps or validation findings as supporting evidence for risk scoring or control justification.
+    P2-5-aws-ec2-hardening-vulnerability-management/
+    ├── README.md
+    ├── docs/
+    │   ├── ec2-hardening-plan.md
+    │   ├── ssh-access-control.md
+    │   ├── patch-management-plan.md
+    │   ├── security-group-exposure-review.md
+    │   ├── vulnerability-assessment-plan.md
+    │   ├── systems-manager-review.md
+    │   ├── cost-control-notes.md
+    │   └── lessons-learned.md
+    ├── diagrams/
+    │   └── README.md
+    └── screenshots/
+        └── README.md
 
 ---
 
-## License
+## Security Notes
 
-MIT — see `LICENSE`.
+Sensitive information will not be committed to this repository.
+
+This includes:
+
+- AWS account ID
+- Access keys
+- Secret access keys
+- Private SSH keys
+- Public IP addresses unless intentionally documented and safe
+- Private IP addresses if considered sensitive
+- Unredacted ARNs
+- Unredacted screenshots
+- Any credential material
+
+Private keys must never be committed to this repository.
+
+---
+
+## Cost-Control Notes
+
+This project is designed to stay within the AWS Free Tier or near-free usage.
+
+Special care will be taken with:
+
+- EC2 instance runtime
+- EBS volumes
+- EBS snapshots
+- Elastic IP addresses
+- Amazon Inspector
+- CloudWatch logs and metrics
+- NAT Gateway if private subnet outbound access is used
+
+The goal is to learn EC2 hardening and vulnerability management without creating unnecessary cost.
+
+---
+
+## Relationship to AWS Solutions Architect Associate
+
+This project supports foundational knowledge for the **AWS Certified Solutions Architect – Associate** certification by focusing on:
+
+- EC2 deployment
+- Compute workload placement
+- Security groups
+- IAM roles for services
+- Monitoring basics
+- Operational security
+- Cost-aware workload design
+- Secure access patterns
+
+This repository is not a certification study guide. It is a hands-on portfolio project designed to support practical AWS learning.
+
+---
+
+## Resume Skill Alignment
+
+This project is intended to support resume experience related to:
+
+- AWS EC2 hardening
+- Linux server security
+- SSH access control
+- Security group review
+- Vulnerability management
+- Patch management
+- AWS Systems Manager concepts
+- Cloud workload security documentation
+
+Example resume bullet after completion:
+
+> Hardened and assessed an AWS EC2 Linux workload by restricting SSH access, reviewing security group exposure, applying patch management practices, and documenting vulnerability remediation steps.
+
+---
+
+## Current Status Summary
+
+This repository is currently in the planning stage.
+
+Implementation will begin after the required Portfolio 1 foundation is completed and after the AWS account, VPC, logging, and S3 security foundations are prepared.
